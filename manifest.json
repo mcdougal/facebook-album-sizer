@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Facebook Album Sizer",
+  "version": "1.0",
+  "background": {},
+  "permissions": ["scripting", "tabs"],
+  "host_permissions": ["https://www.facebook.com/media/set/edit/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://www.facebook.com/media/set/edit/*"],
+      "js": ["sizer.js"]
+    }
+  ]
+}
