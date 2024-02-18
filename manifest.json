@@ -3,11 +3,11 @@
   "name": "Facebook Album Arranger",
   "version": "1.0",
   "background": {},
-  "permissions": ["scripting"],
-  "host_permissions": ["https://www.facebook.com/media/set/*"],
+  "permissions": [],
+  "host_permissions": ["https://www.facebook.com/*"],
   "content_scripts": [
     {
-      "matches": ["https://www.facebook.com/media/set/*"],
+      "matches": ["https://www.facebook.com/*"],
       "js": ["sizer.js"]
     }
   ]
